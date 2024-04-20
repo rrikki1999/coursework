@@ -1,0 +1,68 @@
+@import 'npm:modern-normalize/modern-normalize.css';
+@import 'default.css';
+@import 'reset.css';
+@import 'header.css';
+@import 'hero.css';
+@import 'filters.css';
+@import 'products-list.css';
+/* @import 'pagination.css'; */
+@import 'popular-products.css';
+@import 'discount-products.css';
+@import 'footer.css';
+@import 'cart.css';
+@import 'modal.css';
+
+.products-section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: start;
+  align-items: start;
+  padding-bottom: 80px;
+}
+
+.products-table-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.popular-discount-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.add {
+  background-color: var(--color-second-bg);
+  color: var(--color-main-bg);
+}
+.button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .products-section {
+    gap: 100px;
+    padding-bottom: 100px;
+  }
+  .products-table-wrapper {
+    gap: 50px;
+  }
+  .popular-discount-wrapper {
+    gap: 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .products-section {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 61px;
+  }
+  .products-table-wrapper {
+    gap: 40px;
+  }
+  .popular-discount-wrapper {
+    gap: 40px;
+  }
+}
